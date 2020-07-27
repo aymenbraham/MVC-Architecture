@@ -1,0 +1,953 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		528B0B20EEF746B8DE3663DC /* Pods_SmartyHomeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A9EBC9D76B0EAEBE70DB5C15 /* Pods_SmartyHomeTests.framework */; };
+		C338F92924CD9A1100509AD8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C338F92824CD9A1100509AD8 /* AppDelegate.swift */; };
+		C338F92B24CD9A1100509AD8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C338F92A24CD9A1100509AD8 /* SceneDelegate.swift */; };
+		C338F93324CD9A1100509AD8 /* SmartyHome.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C338F93124CD9A1100509AD8 /* SmartyHome.xcdatamodeld */; };
+		C338F93524CD9A1300509AD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C338F93424CD9A1300509AD8 /* Assets.xcassets */; };
+		C338F93824CD9A1300509AD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C338F93624CD9A1300509AD8 /* LaunchScreen.storyboard */; };
+		C338F94324CD9A1300509AD8 /* SmartyHomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C338F94224CD9A1300509AD8 /* SmartyHomeTests.swift */; };
+		C338F94E24CD9A1300509AD8 /* SmartyHomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C338F94D24CD9A1300509AD8 /* SmartyHomeUITests.swift */; };
+		C338F96324CD9D8000509AD8 /* UIColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = C338F96224CD9D8000509AD8 /* UIColors.swift */; };
+		C338F96524CD9DE200509AD8 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C338F96424CD9DE200509AD8 /* DateExtensions.swift */; };
+		C338F96A24CD9F4000509AD8 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C338F96824CD9F4000509AD8 /* MainViewController.swift */; };
+		C338F96B24CD9F4000509AD8 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C338F96924CD9F4000509AD8 /* MainViewController.xib */; };
+		C338F97024CDB22B00509AD8 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = C338F96F24CDB22B00509AD8 /* RoundButton.swift */; };
+		C338F97224CDC25200509AD8 /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C338F97124CDC25200509AD8 /* UIViewController.swift */; };
+		C3C05B9224CDCEB000A3FC7D /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C05B9024CDCEB000A3FC7D /* HomeViewController.swift */; };
+		C3C05B9324CDCEB000A3FC7D /* HomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3C05B9124CDCEB000A3FC7D /* HomeViewController.xib */; };
+		C3C05B9C24CDD99500A3FC7D /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C05B9A24CDD99500A3FC7D /* ImageTableViewCell.swift */; };
+		C3C05B9D24CDD99500A3FC7D /* ImageTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3C05B9B24CDD99500A3FC7D /* ImageTableViewCell.xib */; };
+		C3C05BA124CDDA8400A3FC7D /* WelcomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C05B9F24CDDA8400A3FC7D /* WelcomeTableViewCell.swift */; };
+		C3C05BA224CDDA8400A3FC7D /* WelcomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3C05BA024CDDA8400A3FC7D /* WelcomeTableViewCell.xib */; };
+		C3C05BA424CDECE000A3FC7D /* StringsExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C05BA324CDECE000A3FC7D /* StringsExtensions.swift */; };
+		C3C05BA924CE490F00A3FC7D /* RoomsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C05BA724CE490F00A3FC7D /* RoomsViewCell.swift */; };
+		C3C05BAA24CE490F00A3FC7D /* RoomsViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3C05BA824CE490F00A3FC7D /* RoomsViewCell.xib */; };
+		C3C05BAE24CE497F00A3FC7D /* DateViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C05BAC24CE497F00A3FC7D /* DateViewCell.swift */; };
+		C3C05BAF24CE497F00A3FC7D /* DateViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C3C05BAD24CE497F00A3FC7D /* DateViewCell.xib */; };
+		C3C05BB524CEED9E00A3FC7D /* Room.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3C05BB424CEED9E00A3FC7D /* Room.swift */; };
+		DDB219E36191FA2CE33657DC /* Pods_SmartyHome_SmartyHomeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5585C6D6C8B9727A2DEA2D8D /* Pods_SmartyHome_SmartyHomeUITests.framework */; };
+		E3475A4C69E017ECC306EA37 /* Pods_SmartyHome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC00A9654EEAA46CBB9CA97D /* Pods_SmartyHome.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C338F93F24CD9A1300509AD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C338F91D24CD9A1100509AD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C338F92424CD9A1100509AD8;
+			remoteInfo = SmartyHome;
+		};
+		C338F94A24CD9A1300509AD8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C338F91D24CD9A1100509AD8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C338F92424CD9A1100509AD8;
+			remoteInfo = SmartyHome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3204AB4BA71E7224091BDE94 /* Pods-SmartyHome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartyHome.release.xcconfig"; path = "Target Support Files/Pods-SmartyHome/Pods-SmartyHome.release.xcconfig"; sourceTree = "<group>"; };
+		5585C6D6C8B9727A2DEA2D8D /* Pods_SmartyHome_SmartyHomeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartyHome_SmartyHomeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5588104BD26B5CDB8EAF2E0E /* Pods-SmartyHomeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartyHomeTests.debug.xcconfig"; path = "Target Support Files/Pods-SmartyHomeTests/Pods-SmartyHomeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8817A6D58C47A76AFF67DF69 /* Pods-SmartyHome-SmartyHomeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartyHome-SmartyHomeUITests.release.xcconfig"; path = "Target Support Files/Pods-SmartyHome-SmartyHomeUITests/Pods-SmartyHome-SmartyHomeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		896485C01CB01C702614177B /* Pods-SmartyHome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartyHome.debug.xcconfig"; path = "Target Support Files/Pods-SmartyHome/Pods-SmartyHome.debug.xcconfig"; sourceTree = "<group>"; };
+		93F880FC18A226F4ED53298C /* Pods-SmartyHomeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartyHomeTests.release.xcconfig"; path = "Target Support Files/Pods-SmartyHomeTests/Pods-SmartyHomeTests.release.xcconfig"; sourceTree = "<group>"; };
+		A47E3DAB6672490F0F121CB9 /* Pods-SmartyHome-SmartyHomeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartyHome-SmartyHomeUITests.debug.xcconfig"; path = "Target Support Files/Pods-SmartyHome-SmartyHomeUITests/Pods-SmartyHome-SmartyHomeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A9EBC9D76B0EAEBE70DB5C15 /* Pods_SmartyHomeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartyHomeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC00A9654EEAA46CBB9CA97D /* Pods_SmartyHome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SmartyHome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C338F92524CD9A1100509AD8 /* SmartyHome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartyHome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C338F92824CD9A1100509AD8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C338F92A24CD9A1100509AD8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		C338F93224CD9A1100509AD8 /* SmartyHome.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SmartyHome.xcdatamodel; sourceTree = "<group>"; };
+		C338F93424CD9A1300509AD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C338F93724CD9A1300509AD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C338F93924CD9A1300509AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C338F93E24CD9A1300509AD8 /* SmartyHomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartyHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C338F94224CD9A1300509AD8 /* SmartyHomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartyHomeTests.swift; sourceTree = "<group>"; };
+		C338F94424CD9A1300509AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C338F94924CD9A1300509AD8 /* SmartyHomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmartyHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C338F94D24CD9A1300509AD8 /* SmartyHomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartyHomeUITests.swift; sourceTree = "<group>"; };
+		C338F94F24CD9A1300509AD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C338F96224CD9D8000509AD8 /* UIColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColors.swift; sourceTree = "<group>"; };
+		C338F96424CD9DE200509AD8 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		C338F96824CD9F4000509AD8 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		C338F96924CD9F4000509AD8 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		C338F96F24CDB22B00509AD8 /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		C338F97124CDC25200509AD8 /* UIViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		C3C05B9024CDCEB000A3FC7D /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		C3C05B9124CDCEB000A3FC7D /* HomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HomeViewController.xib; sourceTree = "<group>"; };
+		C3C05B9A24CDD99500A3FC7D /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
+		C3C05B9B24CDD99500A3FC7D /* ImageTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ImageTableViewCell.xib; sourceTree = "<group>"; };
+		C3C05B9F24CDDA8400A3FC7D /* WelcomeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeTableViewCell.swift; sourceTree = "<group>"; };
+		C3C05BA024CDDA8400A3FC7D /* WelcomeTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WelcomeTableViewCell.xib; sourceTree = "<group>"; };
+		C3C05BA324CDECE000A3FC7D /* StringsExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringsExtensions.swift; sourceTree = "<group>"; };
+		C3C05BA724CE490F00A3FC7D /* RoomsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoomsViewCell.swift; sourceTree = "<group>"; };
+		C3C05BA824CE490F00A3FC7D /* RoomsViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RoomsViewCell.xib; sourceTree = "<group>"; };
+		C3C05BAC24CE497F00A3FC7D /* DateViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateViewCell.swift; sourceTree = "<group>"; };
+		C3C05BAD24CE497F00A3FC7D /* DateViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateViewCell.xib; sourceTree = "<group>"; };
+		C3C05BB424CEED9E00A3FC7D /* Room.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Room.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C338F92224CD9A1100509AD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3475A4C69E017ECC306EA37 /* Pods_SmartyHome.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C338F93B24CD9A1300509AD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				528B0B20EEF746B8DE3663DC /* Pods_SmartyHomeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C338F94624CD9A1300509AD8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDB219E36191FA2CE33657DC /* Pods_SmartyHome_SmartyHomeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6699718699BD4E7E1CA59D7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AC00A9654EEAA46CBB9CA97D /* Pods_SmartyHome.framework */,
+				5585C6D6C8B9727A2DEA2D8D /* Pods_SmartyHome_SmartyHomeUITests.framework */,
+				A9EBC9D76B0EAEBE70DB5C15 /* Pods_SmartyHomeTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A48C4E98B1CADC4CF25704C4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				896485C01CB01C702614177B /* Pods-SmartyHome.debug.xcconfig */,
+				3204AB4BA71E7224091BDE94 /* Pods-SmartyHome.release.xcconfig */,
+				A47E3DAB6672490F0F121CB9 /* Pods-SmartyHome-SmartyHomeUITests.debug.xcconfig */,
+				8817A6D58C47A76AFF67DF69 /* Pods-SmartyHome-SmartyHomeUITests.release.xcconfig */,
+				5588104BD26B5CDB8EAF2E0E /* Pods-SmartyHomeTests.debug.xcconfig */,
+				93F880FC18A226F4ED53298C /* Pods-SmartyHomeTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		C338F91C24CD9A1100509AD8 = {
+			isa = PBXGroup;
+			children = (
+				C338F92724CD9A1100509AD8 /* SmartyHome */,
+				C338F94124CD9A1300509AD8 /* SmartyHomeTests */,
+				C338F94C24CD9A1300509AD8 /* SmartyHomeUITests */,
+				C338F92624CD9A1100509AD8 /* Products */,
+				A48C4E98B1CADC4CF25704C4 /* Pods */,
+				6699718699BD4E7E1CA59D7A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C338F92624CD9A1100509AD8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C338F92524CD9A1100509AD8 /* SmartyHome.app */,
+				C338F93E24CD9A1300509AD8 /* SmartyHomeTests.xctest */,
+				C338F94924CD9A1300509AD8 /* SmartyHomeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C338F92724CD9A1100509AD8 /* SmartyHome */ = {
+			isa = PBXGroup;
+			children = (
+				C338F96E24CDB20300509AD8 /* UIComponents */,
+				C338F96124CD9C9700509AD8 /* Fonts */,
+				C338F96024CD9C4600509AD8 /* Constants */,
+				C338F95F24CD9BC100509AD8 /* Extensions */,
+				C338F95E24CD9B5200509AD8 /* AppDelagate */,
+				C338F95D24CD9B4900509AD8 /* Models */,
+				C338F95C24CD9B2A00509AD8 /* Features */,
+				C338F95B24CD9AEB00509AD8 /* Ressources */,
+				C338F93624CD9A1300509AD8 /* LaunchScreen.storyboard */,
+				C338F93924CD9A1300509AD8 /* Info.plist */,
+				C338F93124CD9A1100509AD8 /* SmartyHome.xcdatamodeld */,
+			);
+			path = SmartyHome;
+			sourceTree = "<group>";
+		};
+		C338F94124CD9A1300509AD8 /* SmartyHomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				C338F94224CD9A1300509AD8 /* SmartyHomeTests.swift */,
+				C338F94424CD9A1300509AD8 /* Info.plist */,
+			);
+			path = SmartyHomeTests;
+			sourceTree = "<group>";
+		};
+		C338F94C24CD9A1300509AD8 /* SmartyHomeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C338F94D24CD9A1300509AD8 /* SmartyHomeUITests.swift */,
+				C338F94F24CD9A1300509AD8 /* Info.plist */,
+			);
+			path = SmartyHomeUITests;
+			sourceTree = "<group>";
+		};
+		C338F95B24CD9AEB00509AD8 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				C338F93424CD9A1300509AD8 /* Assets.xcassets */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		C338F95C24CD9B2A00509AD8 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				C338F96724CD9EEA00509AD8 /* Home */,
+				C338F96624CD9EE300509AD8 /* Main */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		C338F95D24CD9B4900509AD8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C3C05BB424CEED9E00A3FC7D /* Room.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C338F95E24CD9B5200509AD8 /* AppDelagate */ = {
+			isa = PBXGroup;
+			children = (
+				C338F92A24CD9A1100509AD8 /* SceneDelegate.swift */,
+				C338F92824CD9A1100509AD8 /* AppDelegate.swift */,
+			);
+			path = AppDelagate;
+			sourceTree = "<group>";
+		};
+		C338F95F24CD9BC100509AD8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				C338F96224CD9D8000509AD8 /* UIColors.swift */,
+				C338F96424CD9DE200509AD8 /* DateExtensions.swift */,
+				C338F97124CDC25200509AD8 /* UIViewController.swift */,
+				C3C05BA324CDECE000A3FC7D /* StringsExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		C338F96024CD9C4600509AD8 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		C338F96124CD9C9700509AD8 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		C338F96624CD9EE300509AD8 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				C3C05B9424CDD91200A3FC7D /* MainTableViewCell */,
+				C338F96824CD9F4000509AD8 /* MainViewController.swift */,
+				C338F96924CD9F4000509AD8 /* MainViewController.xib */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		C338F96724CD9EEA00509AD8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				C3C05BA524CE489A00A3FC7D /* HomeTableViewCells */,
+				C3C05B9024CDCEB000A3FC7D /* HomeViewController.swift */,
+				C3C05B9124CDCEB000A3FC7D /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		C338F96E24CDB20300509AD8 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+				C338F96F24CDB22B00509AD8 /* RoundButton.swift */,
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		C3C05B9424CDD91200A3FC7D /* MainTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C3C05B9E24CDD9A000A3FC7D /* WelcomeViewCell */,
+				C3C05B9924CDD96C00A3FC7D /* ImageViewCell */,
+			);
+			path = MainTableViewCell;
+			sourceTree = "<group>";
+		};
+		C3C05B9924CDD96C00A3FC7D /* ImageViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C3C05B9A24CDD99500A3FC7D /* ImageTableViewCell.swift */,
+				C3C05B9B24CDD99500A3FC7D /* ImageTableViewCell.xib */,
+			);
+			path = ImageViewCell;
+			sourceTree = "<group>";
+		};
+		C3C05B9E24CDD9A000A3FC7D /* WelcomeViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C3C05B9F24CDDA8400A3FC7D /* WelcomeTableViewCell.swift */,
+				C3C05BA024CDDA8400A3FC7D /* WelcomeTableViewCell.xib */,
+			);
+			path = WelcomeViewCell;
+			sourceTree = "<group>";
+		};
+		C3C05BA524CE489A00A3FC7D /* HomeTableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				C3C05BAB24CE495500A3FC7D /* DateViewCell */,
+				C3C05BA624CE48BC00A3FC7D /* RoomViewCell */,
+			);
+			path = HomeTableViewCells;
+			sourceTree = "<group>";
+		};
+		C3C05BA624CE48BC00A3FC7D /* RoomViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C3C05BA724CE490F00A3FC7D /* RoomsViewCell.swift */,
+				C3C05BA824CE490F00A3FC7D /* RoomsViewCell.xib */,
+			);
+			path = RoomViewCell;
+			sourceTree = "<group>";
+		};
+		C3C05BAB24CE495500A3FC7D /* DateViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				C3C05BAC24CE497F00A3FC7D /* DateViewCell.swift */,
+				C3C05BAD24CE497F00A3FC7D /* DateViewCell.xib */,
+			);
+			path = DateViewCell;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C338F92424CD9A1100509AD8 /* SmartyHome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C338F95224CD9A1300509AD8 /* Build configuration list for PBXNativeTarget "SmartyHome" */;
+			buildPhases = (
+				CB249735445DB85E4F564209 /* [CP] Check Pods Manifest.lock */,
+				C338F92124CD9A1100509AD8 /* Sources */,
+				C338F92224CD9A1100509AD8 /* Frameworks */,
+				C338F92324CD9A1100509AD8 /* Resources */,
+				4CB83DD506B60FBE1A525B06 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmartyHome;
+			productName = SmartyHome;
+			productReference = C338F92524CD9A1100509AD8 /* SmartyHome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C338F93D24CD9A1300509AD8 /* SmartyHomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C338F95524CD9A1300509AD8 /* Build configuration list for PBXNativeTarget "SmartyHomeTests" */;
+			buildPhases = (
+				8818E698A1B87874A4DAC4C6 /* [CP] Check Pods Manifest.lock */,
+				C338F93A24CD9A1300509AD8 /* Sources */,
+				C338F93B24CD9A1300509AD8 /* Frameworks */,
+				C338F93C24CD9A1300509AD8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C338F94024CD9A1300509AD8 /* PBXTargetDependency */,
+			);
+			name = SmartyHomeTests;
+			productName = SmartyHomeTests;
+			productReference = C338F93E24CD9A1300509AD8 /* SmartyHomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C338F94824CD9A1300509AD8 /* SmartyHomeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C338F95824CD9A1300509AD8 /* Build configuration list for PBXNativeTarget "SmartyHomeUITests" */;
+			buildPhases = (
+				F34B13EEECE13EC7C2DDFB01 /* [CP] Check Pods Manifest.lock */,
+				C338F94524CD9A1300509AD8 /* Sources */,
+				C338F94624CD9A1300509AD8 /* Frameworks */,
+				C338F94724CD9A1300509AD8 /* Resources */,
+				F657F76E2C4FB4A23EA71B4E /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C338F94B24CD9A1300509AD8 /* PBXTargetDependency */,
+			);
+			name = SmartyHomeUITests;
+			productName = SmartyHomeUITests;
+			productReference = C338F94924CD9A1300509AD8 /* SmartyHomeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C338F91D24CD9A1100509AD8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = AymenBraham;
+				TargetAttributes = {
+					C338F92424CD9A1100509AD8 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					C338F93D24CD9A1300509AD8 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = C338F92424CD9A1100509AD8;
+					};
+					C338F94824CD9A1300509AD8 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = C338F92424CD9A1100509AD8;
+					};
+				};
+			};
+			buildConfigurationList = C338F92024CD9A1100509AD8 /* Build configuration list for PBXProject "SmartyHome" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C338F91C24CD9A1100509AD8;
+			productRefGroup = C338F92624CD9A1100509AD8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C338F92424CD9A1100509AD8 /* SmartyHome */,
+				C338F93D24CD9A1300509AD8 /* SmartyHomeTests */,
+				C338F94824CD9A1300509AD8 /* SmartyHomeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C338F92324CD9A1100509AD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C3C05B9D24CDD99500A3FC7D /* ImageTableViewCell.xib in Resources */,
+				C338F93824CD9A1300509AD8 /* LaunchScreen.storyboard in Resources */,
+				C3C05BAF24CE497F00A3FC7D /* DateViewCell.xib in Resources */,
+				C338F93524CD9A1300509AD8 /* Assets.xcassets in Resources */,
+				C338F96B24CD9F4000509AD8 /* MainViewController.xib in Resources */,
+				C3C05BA224CDDA8400A3FC7D /* WelcomeTableViewCell.xib in Resources */,
+				C3C05B9324CDCEB000A3FC7D /* HomeViewController.xib in Resources */,
+				C3C05BAA24CE490F00A3FC7D /* RoomsViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C338F93C24CD9A1300509AD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C338F94724CD9A1300509AD8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CB83DD506B60FBE1A525B06 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartyHome/Pods-SmartyHome-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartyHome/Pods-SmartyHome-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartyHome/Pods-SmartyHome-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8818E698A1B87874A4DAC4C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartyHomeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB249735445DB85E4F564209 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartyHome-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F34B13EEECE13EC7C2DDFB01 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartyHome-SmartyHomeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F657F76E2C4FB4A23EA71B4E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartyHome-SmartyHomeUITests/Pods-SmartyHome-SmartyHomeUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartyHome-SmartyHomeUITests/Pods-SmartyHome-SmartyHomeUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartyHome-SmartyHomeUITests/Pods-SmartyHome-SmartyHomeUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C338F92124CD9A1100509AD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C338F97024CDB22B00509AD8 /* RoundButton.swift in Sources */,
+				C338F96A24CD9F4000509AD8 /* MainViewController.swift in Sources */,
+				C3C05BAE24CE497F00A3FC7D /* DateViewCell.swift in Sources */,
+				C3C05BB524CEED9E00A3FC7D /* Room.swift in Sources */,
+				C338F93324CD9A1100509AD8 /* SmartyHome.xcdatamodeld in Sources */,
+				C3C05BA924CE490F00A3FC7D /* RoomsViewCell.swift in Sources */,
+				C3C05B9C24CDD99500A3FC7D /* ImageTableViewCell.swift in Sources */,
+				C338F97224CDC25200509AD8 /* UIViewController.swift in Sources */,
+				C3C05BA424CDECE000A3FC7D /* StringsExtensions.swift in Sources */,
+				C338F92924CD9A1100509AD8 /* AppDelegate.swift in Sources */,
+				C3C05B9224CDCEB000A3FC7D /* HomeViewController.swift in Sources */,
+				C338F92B24CD9A1100509AD8 /* SceneDelegate.swift in Sources */,
+				C3C05BA124CDDA8400A3FC7D /* WelcomeTableViewCell.swift in Sources */,
+				C338F96324CD9D8000509AD8 /* UIColors.swift in Sources */,
+				C338F96524CD9DE200509AD8 /* DateExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C338F93A24CD9A1300509AD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C338F94324CD9A1300509AD8 /* SmartyHomeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C338F94524CD9A1300509AD8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C338F94E24CD9A1300509AD8 /* SmartyHomeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C338F94024CD9A1300509AD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C338F92424CD9A1100509AD8 /* SmartyHome */;
+			targetProxy = C338F93F24CD9A1300509AD8 /* PBXContainerItemProxy */;
+		};
+		C338F94B24CD9A1300509AD8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C338F92424CD9A1100509AD8 /* SmartyHome */;
+			targetProxy = C338F94A24CD9A1300509AD8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C338F93624CD9A1300509AD8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C338F93724CD9A1300509AD8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C338F95024CD9A1300509AD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C338F95124CD9A1300509AD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C338F95324CD9A1300509AD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 896485C01CB01C702614177B /* Pods-SmartyHome.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6X4F2L4XF;
+				INFOPLIST_FILE = SmartyHome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AymenBraham.SmartyHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C338F95424CD9A1300509AD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3204AB4BA71E7224091BDE94 /* Pods-SmartyHome.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6X4F2L4XF;
+				INFOPLIST_FILE = SmartyHome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AymenBraham.SmartyHome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C338F95624CD9A1300509AD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5588104BD26B5CDB8EAF2E0E /* Pods-SmartyHomeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6X4F2L4XF;
+				INFOPLIST_FILE = SmartyHomeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AymenBraham.SmartyHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartyHome.app/SmartyHome";
+			};
+			name = Debug;
+		};
+		C338F95724CD9A1300509AD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93F880FC18A226F4ED53298C /* Pods-SmartyHomeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6X4F2L4XF;
+				INFOPLIST_FILE = SmartyHomeTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AymenBraham.SmartyHomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SmartyHome.app/SmartyHome";
+			};
+			name = Release;
+		};
+		C338F95924CD9A1300509AD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A47E3DAB6672490F0F121CB9 /* Pods-SmartyHome-SmartyHomeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6X4F2L4XF;
+				INFOPLIST_FILE = SmartyHomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AymenBraham.SmartyHomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartyHome;
+			};
+			name = Debug;
+		};
+		C338F95A24CD9A1300509AD8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8817A6D58C47A76AFF67DF69 /* Pods-SmartyHome-SmartyHomeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A6X4F2L4XF;
+				INFOPLIST_FILE = SmartyHomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.AymenBraham.SmartyHomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = SmartyHome;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C338F92024CD9A1100509AD8 /* Build configuration list for PBXProject "SmartyHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C338F95024CD9A1300509AD8 /* Debug */,
+				C338F95124CD9A1300509AD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C338F95224CD9A1300509AD8 /* Build configuration list for PBXNativeTarget "SmartyHome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C338F95324CD9A1300509AD8 /* Debug */,
+				C338F95424CD9A1300509AD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C338F95524CD9A1300509AD8 /* Build configuration list for PBXNativeTarget "SmartyHomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C338F95624CD9A1300509AD8 /* Debug */,
+				C338F95724CD9A1300509AD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C338F95824CD9A1300509AD8 /* Build configuration list for PBXNativeTarget "SmartyHomeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C338F95924CD9A1300509AD8 /* Debug */,
+				C338F95A24CD9A1300509AD8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C338F93124CD9A1100509AD8 /* SmartyHome.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C338F93224CD9A1100509AD8 /* SmartyHome.xcdatamodel */,
+			);
+			currentVersion = C338F93224CD9A1100509AD8 /* SmartyHome.xcdatamodel */;
+			path = SmartyHome.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C338F91D24CD9A1100509AD8 /* Project object */;
+}
