@@ -11,11 +11,9 @@ import UIKit
 
 class Constants {
     
-    static let BaseURL =  "" 
+    static let BaseURL =  ""
         
     static let appVersion = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as? String
-    //static let appVersion = "1.2"
-
     static func radius(_ value: CGFloat) -> CGFloat {
            return UIScreen.main.bounds.width * (value / 500)
     }
@@ -34,6 +32,10 @@ class Constants {
           let passwordTest = NSPredicate(format: "SELF MATCHES %@", passwordRegex)
           return passwordTest.evaluate(with: testPass)
       }
+    
+    class func isUserConected() {
+        
+    }
     
     struct ScreenSize {
         static let SCREEN_WIDTH         = UIScreen.main.bounds.size.width
