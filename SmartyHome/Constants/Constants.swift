@@ -11,7 +11,7 @@ import UIKit
 
 class Constants {
     
-    static let BaseURL =  ""
+    static let BaseURL =  "" 
         
     static let appVersion = Bundle.main.infoDictionary!["CFBundleShortVersionString"] as? String
     //static let appVersion = "1.2"
